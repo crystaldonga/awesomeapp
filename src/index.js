@@ -1,12 +1,20 @@
 
 import React from 'react';
 import  ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+//import Myname,{name1,name2} from './App';
+import * as ques from './App';
+
 
 
 ReactDOM.render(
-  <App/>
+  <>
+    <ol>
+      <li>crystal</li>
+      <li>{ques.default}</li>
+      <li>{ques.name1()}</li>
+      <li>{ques.name2()}</li>
 
-,document.getElementById('root')
+    </ol>
+  </>,document.getElementById('root')
+
 );
