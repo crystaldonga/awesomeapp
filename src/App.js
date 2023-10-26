@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+
+function App(){
+  let currtime=new Date();
+currtime = currtime.getHours();
+let greeting="";
+const cssstyle={ };
+if(currtime>=1 && currtime<=11){
+    greeting="Good Morning";
+    cssstyle.color = "green";
+}else if(currtime>=12 && currtime<20){
+    greeting="Good Afternoon";
+    cssstyle.color = "Orange";
+}else{
+    greeting="Good night"
+    cssstyle.color = "Black";
+}
+
+return (<>
+  <div>
+  <h1>Hello Sir,<spam style={cssstyle}>{greeting}</spam></h1>
+  </div>
+</>);
 }
 
 export default App;
