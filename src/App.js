@@ -1,15 +1,16 @@
+import React from 'react';
+import {add,sub,mul,div} from './Calc.jsx';
 
-const n = "dc";
-
-function name1(){
-   let name1 = "crystal"
-   return name1;
+function App(){
+  return(
+    <>
+    <ul>
+    <li>{add(20,3)}</li>
+    <li>{sub(20,3)}</li>
+    <li>{mul(20,3)}</li>
+    <li>{div(20,3)}</li>
+    </ul>
+    </>
+  );
 }
-function name2(){
-  let name2 = "donga"
-  return name2;
-}
-
-
-export default n;
-export {name1,name2};
+export default App;
