@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM  from 'react-dom';
 import Card from './Card.jsx';
 import Sdata from './Sdata.jsx';
-
+import './index.css';
 ReactDOM.render(
     <>
+    <h1 className='d'>TOP 3 NETFLIX SERIES</h1>
     <Card imgsrc={Sdata[0].imgsrc}
         title={Sdata[0].title}
         sname={Sdata[0].sname}
