@@ -1,24 +1,26 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-import Card from './Cards.jsx';
+import Card from './Card.jsx';
+import Sdata from './Sdata.jsx';
+
 ReactDOM.render(
     <>
-    <Card imgsrc="http://cultartes.com/wp-content/uploads/2020/09/Dark-Season-3-German-series-is-streaming-online-on-Netflix-with-English-subtitles-release-date-27th-June-1-1024x597.jpg"
-        title="A Netflix Original Series"
-        sname="DARK"
-        link="https://www.netflix.com/in/title/80100172"
+    <Card imgsrc={Sdata[0].imgsrc}
+        title={Sdata[0].title}
+        sname={Sdata[0].sname}
+        link={Sdata[0].link}
     />
 
-<Card imgsrc="https://www.heavenofhorror.com/wp-content/uploads/2020/04/Extracurricular-netflix-review.jpg"
-        title="A Netflix Original Series"
-        sname="EXTRA CURRICULAR"
-        link="https://www.netflix.com/in/title/80990668"
+ <Card imgsrc={Sdata[1].imgsrc}
+        title={Sdata[1].title}
+        sname={Sdata[1].sname}
+        link={Sdata[1].link}
     />
 
-<Card imgsrc="http://wallpapercave.com/wp/wp1839579.jpg"
-        title="A Netflix Original Series"
-        sname="STRANGER THING"
-        link="https://www.netflix.com/in/title/80057281"
+ <Card imgsrc={Sdata[2].imgsrc}
+        title={Sdata[2].title}
+        sname={Sdata[2].sname}
+        link={Sdata[2].link}
     />
     </>,document.getElementById('root')
 );
