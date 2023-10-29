@@ -1,19 +1,28 @@
 import react,{useState} from 'react';
 
-const App=()=>{
-    let newTime = new Date().toLocaleTimeString();
-    const[ctime,stime] = useState(newTime);
 
-    const UpdateTime=()=>{
-        newTime = new Date().toLocaleTimeString();
-        stime(newTime);
+const App=()=>{
+
+    const[bg,setbg] = useState("purple");
+    const[name,sname]=useState("click me");
+    const bgChange=()=>{
+     let newColor = "green";
+     setbg(newColor);
+     sname("auhuauha");
+
     }
-    setInterval(UpdateTime, 1000);
-    return(<>
-    <div>
-        <h1>{ctime}</h1>
-        
-        </div>
-    </>)
+
+    const bgBack=()=>{
+    setbg("purple");
+    sname("ouch 🤷‍♂️" );
+    }
+   return(<>
+      <div style={{backgroundColor:bg}}>
+        <button onClick={bgChange} onDoubleClick={bgBack}> {name} </button>
+      </div>
+
+
+   </>)
+
 }
-export default  App; 
+export default App;
