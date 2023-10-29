@@ -8,10 +8,11 @@ const App=()=>{
         newTime = new Date().toLocaleTimeString();
         stime(newTime);
     }
+    setInterval(UpdateTime, 1000);
     return(<>
     <div>
         <h1>{ctime}</h1>
-        <button onClick={UpdateTime}>get time</button>
+        
         </div>
     </>)
 }

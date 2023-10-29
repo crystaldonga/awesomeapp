@@ -1,14 +1,5 @@
 
-button{
-    padding: 12px 40px;
-    background: rebeccapurple;
-    color: white;
-    border: 2px solid wheat;
-    outline: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
+
 
 div{
     width: 100%;
