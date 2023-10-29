@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-import App1 from './App1.jsx';
+import App from './App.jsx';
 import './index.css';
 
 
 
 ReactDOM.render(
     <>
-    <div>
-    <App1/>
-    </div>
+   
+    <App/>
+   
     </>
     ,document.getElementById('root')
 );

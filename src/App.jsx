@@ -1,23 +1,25 @@
-import React from 'react';
+import React,{useState}from 'react';
 
-
-import Amazon from './Amazon.jsx';
-import Netflix from './Netflix.jsx';
-let favs ="netflix";
 
 const App=()=>{
 
+    const state =useState;
+    const[count,setCount] = useState(0)
 
- 
-  
-              <>
-    <h1 className='d'>TOP 3 NETFLIX SERIES</h1>
-    {/* <favs1/> */}
-    {(favs==='netflix')?<Amazon/>:<Netflix/>}
-
+    const IncMent=()=>{
+       setCount(count+1);
+        
+    };
     
-    </>
-  
-}
+    
+    return (
+        <>
+        <div className="div">
+         <h1 className="count">{count}</h1>
+         <button onClick={IncMent} className="btn">click me</button>
+         </div>
+        </>
+    );
+};
 
 export default App;

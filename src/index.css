@@ -1,6 +1,20 @@
-.a{
+
+.div{
+    
+    background-color: aqua;
+    height: 70px;
+    width: 70px;
+    margin: 20% 45.50% 50% 45.50%;
+    border-radius: 5px;
+
+}
+.btn{
     text-align: center;
-    text-decoration: dashed;
-    background-color: azure;
-    color: black;
+    color: blueviolet;
+    padding: 5px 9px;
+}
+
+.count{
+    text-align: center;
+    font-size: medium;
 }
