@@ -1,25 +1,18 @@
-import React,{useState}from 'react';
-
+import react,{useState} from 'react';
 
 const App=()=>{
+    let newTime = new Date().toLocaleTimeString();
+    const[ctime,stime] = useState(newTime);
 
-    const state =useState;
-    const[count,setCount] = useState(0)
-
-    const IncMent=()=>{
-       setCount(count+1);
-        
-    };
-    
-    
-    return (
-        <>
-        <div className="div">
-         <h1 className="count">{count}</h1>
-         <button onClick={IncMent} className="btn">click me</button>
-         </div>
-        </>
-    );
-};
-
-export default App;
+    const UpdateTime=()=>{
+        newTime = new Date().toLocaleTimeString();
+        stime(newTime);
+    }
+    return(<>
+    <div>
+        <h1>{ctime}</h1>
+        <button onClick={UpdateTime}>get time</button>
+        </div>
+    </>)
+}
+export default  App; 
