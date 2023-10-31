@@ -1,19 +1,26 @@
-import react,{useState} from 'react';
+import React,{useState} from 'react'
 
 const App=()=>{
-    let newTime = new Date().toLocaleTimeString();
-    const[ctime,stime] = useState(newTime);
-
-    const UpdateTime=()=>{
-        newTime = new Date().toLocaleTimeString();
-        stime(newTime);
-    }
-    setInterval(UpdateTime, 1000);
-    return(<>
-    <div>
-        <h1>{ctime}</h1>
-        
-        </div>
-    </>)
+   const[name,setname] = useState();
+   const[fullname,sname] = useState();
+   const inputValue=(event)=>{
+    console.log(event.target.value);
+    setname(event.target.value);
+   }
+   const finalOut=()=>{
+    sname(name)
+   }
+   return(
+      <>
+      <div>
+         <h1>Hello {fullname}</h1>
+         <input type='text' placeholder="Enter your name" defaultValue="" onChange={inputValue} value={name}/>
+         <button onClick={finalOut}>Click me</button>
+      </div>
+      </>
+   );
 }
-export default  App; 
+
+export default App;
+
+
