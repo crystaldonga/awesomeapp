@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddIcon from '@mui/icons-material/Add';
 
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
     <div className="center">
           <h1>{num}</h1>
           
-          <button onClick={increment}>increm</button>
+          <button onClick={increment}><AddIcon/></button>
           <button onClick={decrement}>decrem</button>
     </div>
 
