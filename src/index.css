@@ -12,7 +12,7 @@
     width: 25%;
     height: 60vh;
     background-color: bisque;
-    box-shadow: 5px 5px 25px -5px black;
+    box-shadow: 5px 5px 25px -5px greenyellow;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
 h1{
     color: white;
     background: transparent;
-    background-color: #303030;
+    background-color:aquamarine;
     padding: 6px 0 2px 0;
     margin-bottom: 10px;
     width: 100%;

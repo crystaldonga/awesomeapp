@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
           <h1>{num}</h1>
           
           <button onClick={increment}><AddIcon/></button>
-          <button onClick={decrement}>decrem</button>
+          <button onClick={decrement}><DeleteIcon/></button>
     </div>
 
     </div>
