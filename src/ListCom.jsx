@@ -8,7 +8,7 @@ const ListCom=(props)=>{
       setLine(true);
       };
    return(
-      <div classNmae="style">
+      <div classNmae="todo_style">
       <span onClick={cutIt}>
       <DeleteIcon className="deletIcon"/>
       </span>
