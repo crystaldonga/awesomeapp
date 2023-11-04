@@ -21,29 +21,53 @@
 }
 h1{
     
+    color: black;
+    font-size: 50px;
+    margin-bottom: 30px;
+    min-width: 64px;
+    box-sizing: border-box;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px black;
+}
+input{
+    text-align: center;
+    height: 30px;
+    border: none;
     background: transparent;
-   
-    padding: 6px 0 2px 0;
-    margin-bottom: 10px;
-    width: 100%;
+    font-size: 20px;
+    font-weight:500;
+    width: 60%;
+    border-bottom: 2px solid palevioletred;
+    outline: none;
+    margin-right: 20px;
     
 }
-button{
-    min-width: 40px;
-    border-radius: 5%;
-    background-color: #30336b;
+.newbtn{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
     border-color: transparent;
-    color: #fff;
-    font-size: 20px;
+    background-color: palevioletred;
+    font-size: 40px;
     border: none;
     outline: none;
-    padding: 0 15px;
-    margin-top: 30px;
-    
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px black;
+     
 }
-.btn1:hover{
-    color:green;
+.newbtn:hover{
+    color: rgb(0, 128, 0);
+    background-color: white;
 }
-.btn2:hover{
-    color:red;
+.deletIcon{
+    color:black;
+    background-color: white;
+    margin-right: 200px;
+}
+.deletIcon:hover{
+    color: red;
+    background-color: white;
 }
