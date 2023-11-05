@@ -12,6 +12,6 @@ const App=()=>{
     </FirstName.Provider>
     </>
   )
-}<ComA/>
+}
 export default App;
 export {FirstName,LastName};
