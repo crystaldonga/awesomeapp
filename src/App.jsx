@@ -7,7 +7,7 @@ const App=()=>{
     <>
     <FirstName.Provider value={"dc"}>
     <LastName.Provider value={'12'}>
-    
+      <ComA/>
     </LastName.Provider>
     </FirstName.Provider>
     </>
