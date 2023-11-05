@@ -1,17 +1,14 @@
-import React,{useState,useEffect}from 'react'
+import React,{useEffect} from 'react'
 const App=()=>{
-  const[num,setNum] =useState(0);
-  
+  const getCovidData =async()=>{
+    const res =await fetch("")
+  }
   useEffect(()=>{
-    document.title = `you clicked me ${num}`
-  })
+   getCovidData();
+  },[])
   return(<>
-    <button onClick={()=>{
-      setNum(num+1)
-    }}>Click Me {num}
-    </button>
-
-    
+   <h1>INDIA COVID-19 Dashboard</h1>
   </>)
 }
+
 export default App;
