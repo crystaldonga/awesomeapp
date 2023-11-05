@@ -1,43 +1,17 @@
-import React ,{useState} from "react";
-import Header from './Header'
-
-import CreateNote from './CreateNote';
-import Note from './Note';
-import Footer from './Footer'
+import React,{createContext} from 'react'
+import ComA from './ComA.jsx'
+const FirstName = createContext();
+const LastName = createContext();
 const App=()=>{
-  const[addItem,setaddItem] = useState([])
-  const addNote=(note)=>{
-    //alert("clixckedwd")
-    setaddItem((prevdata)=>{
-      return[...prevdata,note];
-    });
-    console.log(note);
-  }
-  const onDelete=(id)=>{
-     setaddItem((olddata)=>
-        olddata.filter((currdata,indx)=>{
-          return indx!==id;
-        })
-     )
-  }
-  return(<>
-    <Header/>
+  return(
+    <>
+    <FirstName.Provider value={"dc"}>
+    <LastName.Provider value={'12'}>
     
-    <CreateNote passNote=
-      {addNote}
-    />
-    
-      {addItem.map((val1,index)=>{
-        return  <Note 
-             key={index}
-             id={index}
-             title={val1.title}
-             content={val1.content}
-             deleteItem={onDelete}
-        />
-      })}
-    <Footer/>
-  </>)
-}
-
+    </LastName.Provider>
+    </FirstName.Provider>
+    </>
+  )
+}<ComA/>
 export default App;
+export {FirstName,LastName};
