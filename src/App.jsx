@@ -6,6 +6,7 @@ import Error from './Error.jsx'
 import Menu from './Menu.jsx'
 import Name from './Name'
 import Service from './Service'
+import User from './User';
 
 const App=()=>{
 
@@ -20,7 +21,8 @@ const App=()=>{
         <Contact name ="contact"/>
       }}/>
       <Route exact path="/Service" component={Service}/>
-      <Route path="/Contact/Name" component={Name}/>
+      <Route exact path="/User/:fname/:lname" component={User}/>
+      <Route path="/User/Name" component={Name}/>
       <Route  component={Error}/>
 
       
