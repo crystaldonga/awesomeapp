@@ -1,7 +1,7 @@
 import React from 'react'
 const About=()=>{
   return(<>
-    <h1>about page</h1>
+    <h1>my page is about </h1>
   </>)
 }
 export default About;

@@ -4,6 +4,7 @@ const Menu = ()=>{
     return(<>
     <NavLink  exact activeClassName="active_class"to="/">About us </NavLink>
     <NavLink  exact activeClassName="active_class"to="/Contact">Contact us </NavLink>
+    <NavLink  exact activeClassName="active_class"to="/Service">Service </NavLink>
     </>)
 }
 
