@@ -1,16 +1,32 @@
 import React from 'react';
-import {add,sub,mul,div} from './Calc.jsx';
+import {
+  BrowserRouter as Router,
+  Route,
+  
+  Routes
+} from 'react-router-dom';
 
-function App(){
-  return(
-    <>
-    <ul>
-    <li>{add(20,3)}</li>
-    <li>{sub(20,3)}</li>
-    <li>{mul(20,3)}</li>
-    <li>{div(20,3)}</li>
-    </ul>
-    </>
+import Users from './Users';
+import NewPlace from './NewPlace';
+import MainNavigation from './MainNavigation';
+
+const App = () => {
+  return (
+    <Router>
+      <MainNavigation />
+      <main>
+        <Routes>
+          <Route path="/" exact>
+            <Users />
+          </Route>
+          <Route path="/places/new" exact>
+            <NewPlace />
+          </Route>
+         
+        </Routes>
+      </main>
+    </Router>
   );
-}
+};
+
 export default App;
