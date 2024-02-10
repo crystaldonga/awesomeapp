@@ -1,32 +1,40 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
+// import React from 'react';
+// import {
+//   BrowserRouter as Router,
+//   Route,
   
-  Routes
-} from 'react-router-dom';
+//   Routes
+// } from 'react-router-dom';
 
-import Users from './Users';
-import NewPlace from './NewPlace';
-import MainNavigation from './MainNavigation';
+// import Users from './Users';
+// import NewPlace from './NewPlace';
+// import MainNavigation from './MainNavigation';
 
-const App = () => {
-  return (
-    <Router>
-      <MainNavigation />
-      <main>
-        <Routes>
-          <Route path="/" exact>
-            <Users />
-          </Route>
-          <Route path="/places/new" exact>
-            <NewPlace />
-          </Route>
+// const App = () => {
+//   return (
+//      <Router>
+//        <MainNavigation />
+//        <main>
+//         <Routes>
+//            <Route path="/" exact element={<Users/>}/>
+             
+          
+//        <Route path="/places/new" exact element={<NewPlace/>}/>
+            
          
-        </Routes>
-      </main>
-    </Router>
-  );
-};
+//          </Routes> 
+//        </main>
+//     </Router>
+  
+//   );
+// };
 
+// export default App;
+import React from 'react'
+import YoutubeForm from './YoutubeForm'
+const App=()=>{
+    return (<>
+        <YoutubeForm/>
+    </>)
+}
 export default App;
